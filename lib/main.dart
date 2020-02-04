@@ -328,21 +328,21 @@ class PromotionsPage extends StatelessWidget{
                           delegate: SliverChildListDelegate(
                             <Widget>[
                               _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),
-                              _buildCard("Mock1","Description1"),            
+                              _buildCard("Mock2","Description2"),
+                              _buildCard("Mock3","Description3"),
+                              _buildCard("Mock4","Description4"),
+                              _buildCard("Mock5","Description5"),
+                              _buildCard("Mock6","Description6"),
+                              _buildCard("Mock7","Description7"),
+                              _buildCard("Mock8","Description8"),
+                              _buildCard("Mock9","Description9"),
+                              _buildCard("Mock10","Description10"),
+                              _buildCard("Mock11","Description11"),
+                              _buildCard("Mock12","Description12"),
+                              _buildCard("Mock13","Description13"),
+                              _buildCard("Mock14","Description14"),
+                              _buildCard("Mock15","Description15"),
+                              _buildCard("Mock16","Description16"),            
                             ],
                           ),
                         ),
@@ -366,7 +366,7 @@ class Scanpage extends StatefulWidget {
 }
 
 class ScanpageState extends State<Scanpage> {
-  String result = "Hey there !";
+  String result = "";
 
   Future _scanQR() async {
     try {
@@ -409,7 +409,7 @@ class ScanpageState extends State<Scanpage> {
       ),
       floatingActionButton: FloatingActionButton.extended(
         icon: Icon(Icons.camera_alt),
-        label: Text("Scan"),
+        label: Text("Scanner"),
         onPressed: _scanQR,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
